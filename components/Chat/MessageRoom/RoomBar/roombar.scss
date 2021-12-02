@@ -1,0 +1,132 @@
+.room_bar {
+  padding: 10px 17px;
+  background: #fff;
+  height: 91px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  .info_room {
+    width: 100%;
+    display: flex;
+    .friend-center-item-v2 {
+      width: 100%;
+      .avatar {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 5px;
+        justify-content: left;
+
+        .userInfo {
+          .avatar-user {
+            border-radius: 50%;
+            width: 62px;
+            height: 62px;
+            margin-right: 11px;
+          }
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .avatar-chat {
+      border-radius: 50%;
+      margin-right: 11px;
+    }
+    img {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      margin-right: 11px;
+    }
+    .content_group_room {
+      position: absolute;
+      display: block;
+      top: 9px;
+      left: 490px;
+      .info_user_room {
+        .count_user {
+          cursor: pointer;
+          .anticon-user {
+            font-size: 18px;
+          }
+          &:hover {
+            color: royalblue;
+            transition: all 0.5s;
+          }
+        }
+      }
+      .room_name {
+        display: flex;
+        align-items: center;
+        h1 {
+          font-size: 30px;
+          margin-right: 15px;
+          margin-bottom: 0;
+        }
+        .anticon-edit {
+          font-size: 18px;
+          cursor: pointer;
+          &:hover {
+            color: royalblue;
+            transition: all 0.5s;
+          }
+        }
+
+        .form_editName {
+          .ant-form-item {
+            margin-bottom: 0;
+            input {
+              font-size: 30px;
+              padding: 0;
+              border-radius: 15px;
+              border-color: royalblue;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+          }
+        }
+        .after_clickEdit {
+          font-size: 18px;
+          .anticon-close {
+            margin: 0 15px;
+            &:hover {
+              color: red;
+              transition: all 0.5s;
+            }
+          }
+          .anticon-check {
+            cursor: pointer;
+            &:hover {
+              color: green;
+              transition: all 0.5s;
+            }
+          }
+        }
+      }
+    }
+    .exit-group {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .sidebar_icon {
+      cursor: pointer;
+      margin-top: 15px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  #avt-user {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+}
